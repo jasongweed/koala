@@ -1,0 +1,136 @@
+
+
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="evolution">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Koala</title>
+
+
+
+    <style>
+
+        #img_div {
+          width: 100%;
+          height: 400px;
+          position: relative;
+          display: inline-block;
+          overflow: hidden;
+          margin: 0;
+        }
+
+        div > img {
+          display: block;
+          margin:auto;
+          max-height: 100%;
+          max-width: 100%;
+          transform: translate(0%, 0%);
+        }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+    </style>
+  </head>
+  <body class="d-flex flex-column h-100" style="background-color:black;">
+    <header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Koalakromes</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</header>
+
+
+<!-- Begin page content -->
+<main role="main" class="flex-shrink-0">
+ 
+  <div class="container" id="container">
+  <br>
+    <h4 class="mt-5"></h4>
+
+    <!-- radiobuttons -->
+    <center>
+    <div class="btn-group btn-group-sm btn-group-toggle" data-toggle="buttons">
+      <label class="btn btn-secondary active">
+        <input type="radio" name="options" id="radioBtnAll" autocomplete="off" checked>All
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="radioBtnInfx" autocomplete="off" check> Infx
+      </label>
+      
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="radioBtnInflam" autocomplete="off"> Inflam/Other
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="radioBtnNeo" autocomplete="off"> Neoplasms
+      </label>
+        <label class="btn btn-secondary">
+      <input type="radio" name="options" id="radioBtnGene" autocomplete="off"> Genetic
+      </label>
+    </div>
+    </center>
+    <center>
+      <span class="btn-group">
+        <button type="button" id="smallerBtn" class="btn btn-outline-dark btn-mini" >Smaller</button>
+        <button type="button" id="biggerBtn" class="btn btn-outline-dark btn-mini" >Bigger</button>
+      </span>
+
+    <div id="img_div" ><br>
+      <img id="derm_img" alt="no img" src="images_shareable/koala.png" alt="no image found"> 
+    </div>
+    </center>
+    <center>
+      <p id="hint" class="text-light" style="margin:0;"> _</p> 
+      <h4 id="answer" class="text-light" style="margin:5;">__</h4>
+      <br>
+
+    <span class="btn-group">
+      <button type="button" id="hintBtn" class="btn btn-secondary btn-mini" >Hint</button>
+      <button type="button" id="nextBtn" class="btn btn-primary btn-mini" >Next</button>
+    </span>
+    <br><br>
+    <p class="text-muted" id="googBtn" style="display:inline;">More on answer.&nbsp;</p>
+    <p class="text-muted" id="googpathBtn" style="display:inline;">Search pathology</p>
+    <br><br>
+
+    </center>
+  </div>
+</main>
+
+    <!-- Bootstrap core CSS -->
+<link href="bootstrap/bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet" >
+<script src="bootstrap/bootstrap-4.3.1-dist/js/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="img_data.js"></script> <!-- img_data.js should be located before qz_engine.js -->
+<script src="qz_engine.js"></script>
+
+
+
+<!-- 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+ -->
+
+ 
+  </body>
+</html>
+
